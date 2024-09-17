@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: vh;
+            width: vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1vh;
+            background-color: black;
+            padding: 2vh;
+            
+
+        }
+        .box1{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+        }
+        .box2{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+        }
+        .box3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+            height: 25vh;
+            width: 15vw;
+        }
+        .box4{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+
+        }
+        .box5{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+
+        }
+        .box6{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+        }
+        .box7{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+        }
+        .box8{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+            
+        }
+        .box9{
+            height: 25vh;
+            width: 15vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            padding: 3vh;
+            gap: 2vh;
+            border-radius: 2vh;
+        }
+        .area1{
+            
+            background-color: orangered;
+            border-radius: 1vh;
+        }
+        .area2{
+            
+            background-color: red;
+            border-radius: 1vh;
+        }
+        .area3{
+            
+            background-color: brown;
+            border-radius: 1vh;
+
+        }
+        .area4{
+            
+            background-color: aqua;
+            border-radius: 1vh;
+        }
+        .area5{
+            
+            background-color: goldenrod;
+            border-radius: 1vh;
+        }
+        .area6{
+           
+            background-color: grey;
+            border-radius: 1vh;
+        }
+        .area12{
+            
+            background-color: grey;
+            border-radius: 1vh;
+            grid-column: 1/3;
+        }
+        .area22{
+            background-color: yellowgreen;
+            grid-column: 3;
+            grid-row: 1/3;
+            border-radius: 1vh;
+        }
+        .area32{
+            background-color: white;
+            border-radius: 1vh;
+        }
+        .area42{
+            border-radius: 1vh;
+            background-color: violet;
+        }
+        .area52{
+            border-radius: 1vh;
+            background-color: whitesmoke;
+            grid-column: 1/4;
+        }
+        .area62{
+            border-radius: 1vh;
+            background-color: gold;
+            }
+        .area72{
+            border-radius: 1vh;
+            background-color:purple;
+            grid-column: 2/4;
+        }
+        .area82{
+            border-radius: 1vh;
+            background-color: rgb(128, 64, 64);
+            grid-column: 1/4;
+        }
+        .area92{
+            border-radius: 1vh;
+            grid-column: 1/3;
+            background-color: coral;
+        }
+        .area93{
+            border-radius: 1vh;
+            background-color: white;
+            grid-column: 3/5;
+        }
+        .area94{
+            border-radius: 1vh;
+            background-color: crimson;
+            grid-column: 1/2;
+        }
+        .area95{
+            border-radius: 1vh;
+            background-color: cornflowerblue;
+            grid-column: 2/5;
+        }
+        .area96{
+            border-radius: 1vh;
+            background-color: hotpink;
+            grid-column: 1/5;
+        }
+        .a{
+            border-radius: 1vh;
+            background-color: rgb(15, 180, 221);
+        }
+        .b{
+            border-radius: 1vh;
+            background-color: rgb(192, 11, 41);
+        }
+        .c{
+            border-radius: 1vh;
+            background-color: rgb(166, 221, 15);
+        }
+        .d{
+            border-radius: 1vh;
+            background-color: rgb(247, 104, 10);
+        }
+        .e{
+            border-radius: 1vh;
+            background-color: rgb(113, 29, 182);
+        }
+        .f{
+            border-radius: 1vh;
+            background-color: rgb(87, 235, 18);
+        }
+        .g{
+            border-radius: 1vh;
+            background-color: rgb(250, 71, 16);
+        }
+        .h{
+            border-radius: 1vh;
+            background-color: rgb(23, 20, 199);
+        }
+        .i{
+            border-radius: 1vh;
+            background-color: rgb(88, 105, 49);
+        }
+        .j{
+            border-radius: 1vh;
+            background-color: rgb(211, 36, 235);
+        }
+        .j{
+            border-radius: 1vh;
+            background-color: rgb(91, 177, 199);
+        }
+        .k{
+            border-radius: 1vh;
+            background-color: rgba(221, 15, 15, 0.747);
+        }
+        .l{
+            border-radius: 1vh;
+            background-color: rgba(196, 169, 171, 0.89);
+        }
+        .m{
+            border-radius: 1vh;
+            background-color: grey;
+        }
+        .n{
+            border-radius: 1vh;
+            background-color: rgb(188, 191, 192);
+        }
+        .o{
+            border-radius: 1vh;
+            background-color: rgb(226, 214, 235);
+        }
+        .p{
+            border-radius: 1vh;
+            background-color: gold;
+        }
+        .q{
+            border-radius: 1vh;
+            background-color: rgb(122, 2, 116);
+        }
+        .r{
+            border-radius: 1vh;
+            background-color: rgb(192, 243, 72);
+        }
+        .ab{
+            grid-column: 1/3;
+            border-radius: 1vh;
+            background-color: rgb(192, 243, 72);
+        }
+        .cd{
+            border-radius: 1vh;
+            background-color: royalblue;
+        }
+        .ef{
+            border-radius: 1vh;
+            background-color: lightcyan;
+        }
+        .gh{
+            border-radius: 1vh;
+            background-color: peru;
+        }
+        .ij{
+            border-radius: 1vh;
+            background-color: blanchedalmond;
+        }
+        .kl{
+            border-radius: 1vh;
+            background-color: rosybrown;
+        }
+        .mn{
+            border-radius: 1vh;
+            background-color: rgb(13, 228, 78);
+        }
+        .pq{
+            border-radius: 1vh;
+            background-color: rgba(144, 13, 219, 0.877);
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .op{
+            border-radius: 1vh;
+            background-color: rgb(7, 150, 143);
+        }
+        .qr{
+            border-radius: 1vh;
+            background-color: rgb(182, 8, 138);
+            grid-row: 3
+        }
+        .st{
+            border-radius: 1vh;
+            background-color: rgb(192, 243, 72);
+        }
+        .uv{
+            border-radius: 1vh;
+            background-color: rgb(247, 47, 12);
+            grid-row: 3;
+        }
+        .wx{
+            border-radius: 1vh;
+            background-color: rgb(101, 130, 138);
+            grid-column: 1/4;
+        }
+        .yz{
+            border-radius: 1vh;
+            background-color: rgb(105, 21, 126);
+        }
+        .ba{
+            border-radius: 1vh;
+            background-color: rgb(17, 187, 59);
+            grid-column: 1/3;
+        }
+        .ca{
+            border-radius: 1vh;
+            background-color: rgb(230, 16, 105);
+            grid-column: 3/5;
+        }
+        .da{
+            border-radius: 1vh;
+            background-color: rgb(27, 197, 160);
+            grid-row: 2/4;
+            grid-column: 1/3;
+        }
+        .ea{
+            border-radius: 1vh;
+            background-color: rgb(21, 221, 15);
+            grid-column: 3/5;
+        }
+        .fa{
+            border-radius: 1vh;
+            background-color: rgb(105, 21, 126);
+        }
+        .ga{
+            border-radius: 1vh;
+            background-color: rgba(240, 13, 13, 0.712);
+        }
+        .aa{
+            border-radius: 1vh;
+            background-color: rgba(214, 194, 10, 0.979);
+        }
+        .bb{
+            border-radius: 1vh;
+            background-color: rgba(92, 8, 126, 0.712);
+        }
+        .cc{
+            border-radius: 1vh;
+            background-color: rgba(85, 240, 13, 0.712);
+        }
+        .dd{
+            border-radius: 1vh;
+            background-color: rgba(117, 126, 125, 0.712);
+        }
+        .ee{
+            border-radius: 1vh;
+            background-color: rgba(223, 96, 191, 0.712);
+        }
+        .ff{
+            border-radius: 1vh;
+            background-color: rgba(104, 145, 141, 0.712);
+        }
+        .gg{
+            border-radius: 1vh;
+            background-color: turquoise;
+        }
+        .hh{
+            border-radius: 1vh;
+            background-color: rgba(240, 13, 13, 0.712);
+            grid-column: 3/6;
+        }
+        .ii{
+            border-radius: 1vh;
+            grid-column: 1/6;
+            background-color: hotpink;
+        }
+        .jj{
+            border-radius: 1vh;
+            grid-column: 1/6;
+            background-color: tan;
+        }
+        .kk{
+            border-radius: 1vh;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-color: azure;
+        }
+        .ll{
+            border-radius: 1vh;
+            grid-column: 2/6;
+            background-color: rgb(185, 255, 105);
+        }
+        .zz{
+            border-radius: 1vh;
+            background-color: hotpink;
+            grid-column: 2/3;
+        }
+        .mm{
+            border-radius: 1vh;
+            grid-column: 3/6;
+            background-color: hotpink;
+        }
+        
+        
+        
+        
+        
+
+
+      
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="area1"></div>
+            <div class="area2"></div>
+            <div class="area3"></div>
+            <div class="area4"></div>
+            <div class="area5"></div>
+            <div class="area6"></div>
+            </div>
+        <div class="box2">
+            <div class="area12"></div>
+            <div class="area22"></div>
+            <div class="area32"></div>
+            <div class="area42"></div>
+
+        </div>
+        <div class="box3">
+            <div class="area52"></div>
+            <div class="area62"></div>
+            <div class="area72"></div>
+            <div class="area82"></div>
+        </div>
+        <div class="box4">
+            <div class="area92"></div>
+            <div class="area93"></div>
+            <div class="area94"></div>
+            <div class="area95"></div>
+            <div class="area96"></div>
+        </div>
+        <div class="box5">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+            <div class="f"></div>
+            <div class="g"></div>
+            <div class="h"></div>
+            <div class="i"></div>
+            <div class="j"></div>
+            <div class="k"></div>
+            <div class="l"></div>
+            <div class="m"></div>
+            <div class="n"></div>
+            <div class="o"></div>
+            <div class="p"></div>
+            <div class="q"></div>
+            <div class="r"></div>
+        </div>
+        <div class="box6">
+            <div class="ab"></div>
+            <div class="cd"></div>
+            <div class="ef"></div>
+            <div class="gh"></div>
+            <div class="ij"></div>
+            <div class="kl"></div>
+            <div class="mn"></div>
+            <div class="pq"></div>
+            <div class="op"></div>
+            <div class="qr"></div>
+            <div class="st"></div>
+            <div class="uv"></div>
+            <div class="wx"></div>
+            <div class="yz"></div>
+        </div>
+        <div class="box7">
+            <div class="ba"></div>
+            <div class="ca"></div>
+            <div class="da"></div>
+            <div class="ea"></div>
+            <div class="fa"></div>
+            <div class="ga"></div>
+        </div>
+        <div class="box8">
+                <div class="aa"></div>
+                <div class="bb"></div>
+                <div class="cc"></div>
+                <div class="dd"></div>
+                <div class="ee"></div>
+                <div class="ff"></div>
+                <div class="gg"></div>
+                <div class="hh"></div>
+                <div class="ii"></div>
+            
+        </div>
+        <div class="box9">
+            <div class="jj"></div>
+            <div class="kk"></div>
+            <div class="ll"></div>
+            <div class="zz"></div>
+            <div class="mm"></div>
+        </div>
+    </div>
+</body>
+</html>
